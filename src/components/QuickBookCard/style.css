@@ -1,0 +1,129 @@
+.card-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  background-color: white;
+  width: 100%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.card-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+
+.card-header-right {
+  text-align: right;
+}
+
+.status {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+
+.author {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.options-section {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 5px;
+}
+
+.comment-section {
+  padding-top: 12px;
+}
+
+.comment-tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.active-tab {
+  font-weight: bold;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.inactive-tab {
+  color: gray;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-label {
+  font-size: 14px;
+  color: gray;
+  padding-top: 8px;
+}
+
+.input-field {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 18px 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.add-comment-button {
+  width: 100%;
+  background-color: #f0f0f0;
+  color: gray;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.view-line-items-button {
+  width: 100%;
+  background-color: #6c47ff;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 16px;
+  border: none;
+  cursor: pointer;
+}

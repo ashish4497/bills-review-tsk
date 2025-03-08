@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  width: 35%;
+}
+
+.sidebar-invoice {
+  width: 100%;
+  background: white;
+  padding: 20px;
+
+}
+
+.tab-menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.inactive-tab {
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.active-tab {
+  background: none !important;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px  !important;
+  border: 1px solid #6a0dad !important;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #000;
+}
+
+.bill-recipt-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.bill-icon {
+  font-size: 50px;
+  color: #bbb;
+}
+
+.bill-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ddd ;
+  border-radius: 10px;
+}
+
+.bill-item {
+  padding: 10px;
+ text-align: left;
+  cursor: pointer;
+ 
+}
+
+.bill-recipt-container:hover {
+  background: #f0f0f0;
+}
+
+.bill-title {
+  color: blue;
+  margin: 0;
+}
+
+.bill-date, .bill-amount {
+  font-size: 14px;
+  color: gray;
+  margin: 0;
+}
+
+.invoice-preview {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expense-btn {
+  background: #6a0dad;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
