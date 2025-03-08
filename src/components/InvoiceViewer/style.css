@@ -49,6 +49,7 @@
 .container-payment-method {
   width: 50%;
   color: #1a5d5d;
+  text-align: left;
 }
 
 .payment-info {
