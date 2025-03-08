@@ -11,11 +11,11 @@ const QuickbookCard = () => {
     <div className="card-container">
       <div className="card-header">
         <div className="card-header-left">
-          {/* <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/QuickBooks_logo.svg/1200px-QuickBooks_logo.svg.png"
+          <img
+            src={'./logo.png'}
             alt="Quickbook Logo"
             className="logo"
-          /> */}
+          />
           <div>
             <h2 className="title">Quickbook</h2>
             <p className="timestamp">16 June, 2024 - 8:15 PM</p>

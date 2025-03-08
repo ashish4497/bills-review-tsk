@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFileInvoice, FaReceipt } from "react-icons/fa";
+import {  FaReceipt } from "react-icons/fa";
 
 import "./style.css";
 

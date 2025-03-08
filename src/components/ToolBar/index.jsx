@@ -1,7 +1,9 @@
 
 import { useState } from "react";
 import { FaSearch, FaBell, FaCog, FaUser } from "react-icons/fa";
+
 import "./style.css";
+import { Link } from "react-router-dom";
 export default function Toolbar() {
   const [reviewSource, setReviewSource] = useState("Google");
 
@@ -33,8 +35,8 @@ export default function Toolbar() {
         <div className="dropdown">
           <button className="action-button">Connect ▼</button>
           <div className="dropdown-content">
-            <a href="#">Google Drive</a>
-            <a href="#">OneDrive</a>
+            <Link href="#">Google Drive</Link>
+            <Link href="#">OneDrive</Link>
           </div>
         </div>
 

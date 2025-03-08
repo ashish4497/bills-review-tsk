@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { FiUploadCloud } from "react-icons/fi";
 import "./style.css";
 
-export default function EasyUpload() {
+export default function EasyUpload({ onClose }) {
   const [selectedTab, setSelectedTab] = useState("Receipts");
   const [selectedClient, setSelectedClient] = useState("");
   const [uploadedFiles, setUploadedFiles] = useState([]);
@@ -14,25 +14,21 @@ export default function EasyUpload() {
     Multiple: "abc.multiple@gmail.com",
   };
 
-  // Handle file upload
   const handleFileChange = (event) => {
     if (event.target.files) {
       setUploadedFiles([...uploadedFiles, ...Array.from(event.target.files)]);
     }
   };
 
-  // Handle email copy
   const handleCopyEmail = (email) => {
     navigator.clipboard.writeText(email);
     alert(`Copied: ${email}`);
   };
 
   return (
-    <div className="container">
-      {/* Header */}
+    <div className="container-recipt">
       <div className="header">
         <h2>EasyUpload</h2>
-        {/* Tabs */}
         <div className="tabs">
           {["Bills", "Receipts", "Bank"].map((tab) => (
             <button
@@ -44,12 +40,11 @@ export default function EasyUpload() {
             </button>
           ))}
         </div>
-        <button className="close-button">
+        <button className="close-button" onClick={onClose}>
           <IoClose size={20} />
         </button>
       </div>
 
-      {/* Document Owner & Client */}
       <div className="info-section">
         <div className="half-width">
           <span className="label">Document Owner</span>
@@ -58,7 +53,7 @@ export default function EasyUpload() {
         <div className="half-width">
           <span className="label">Client</span>
           <select
-            className="dropdown"
+            className="dropdown-l"
             value={selectedClient}
             onChange={(e) => setSelectedClient(e.target.value)}
           >
@@ -69,25 +64,6 @@ export default function EasyUpload() {
         </div>
       </div>
 
-      {/* File Upload Section */}
-      {/* <div
-        className="file-upload"
-        onDrop={handleDrop}
-        onDragOver={handleDragOver}
-      >
-        <div className="upload-content">
-          <span className="icon">☁️</span>
-          <p>Drag & Drop or Choose file to upload</p>
-          <small className="hint">JPG, PNG, PDF, CSV</small>
-          <input
-            type="file"
-            multiple
-            className="file-input"
-            onChange={handleFileChange}
-          />
-        </div>
-      </div> */}
-      {/* File Upload Section */}
       <div className="file-upload">
         <label htmlFor="fileInput" className="upload-content">
           <FiUploadCloud size={40} className="upload-icon" />
@@ -103,22 +79,7 @@ export default function EasyUpload() {
         </label>
       </div>
 
-      {/* Uploaded Files List */}
-      {/* {uploadedFiles.length > 0 && (
-        <div className="uploaded-files">
-          <h4>Uploaded Files:</h4>
-          <ul>
-            {uploadedFiles.map((file, index) => (
-              <li key={index}>{file.name}</li>
-            ))}
-          </ul>
-        </div>
-      )} */}
-
-      {/* Add Receipt Button */}
       <button className="add-button">Add Receipt</button>
-
-      {/* Email Section */}
       <div className="email-section">
         <p>Send Over Email</p>
         {Object.entries(emails).map(([label, email]) => (

@@ -4,11 +4,7 @@ import "./style.css";
 const InvoiceViewer = () => {
   return (
     <>
-
-    
-   
     <div className="invoice-container">
-     
       <div className="invoice">
         <h2 className="invoice-title">INVOICE</h2>
         <div className="invoice-header">

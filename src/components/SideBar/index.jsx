@@ -32,8 +32,6 @@ export default function Sidebar() {
           </li>
         ))}
       </ul>
-
-      {/* Help Section */}
       <div className="sidebar-help">
         <FaQuestionCircle />
         <span>Help</span>

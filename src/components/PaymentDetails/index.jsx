@@ -17,7 +17,16 @@ export default function PaymentDetails() {
     <>
 
     <div className="payment-container">
-      <h3 className="payment-header">Payment Details</h3>
+    <div class="payment-sub-container">
+  <button class="nav-button left">
+    &#x276E; 
+  </button>
+  <h2 class="payment-title">Payment Details</h2>
+  <button class="nav-button right">
+    &#x276F; 
+  </button>
+</div>
+
       <div className="form-group">
         <label>Payment Status</label>
         <div className="radio-group">
@@ -156,6 +165,15 @@ export default function PaymentDetails() {
         <label>Description</label>
         <textarea placeholder="Enter Description" value={description} onChange={(e) => setDescription(e.target.value)} />
       </div>
+      <div class="payment-sub-container bottom-border">
+  <button class="nav-button left">&#x276E;</button>
+  <div class="stepper-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+  </div>
+  <button class="nav-button right">&#x276F;</button>
+</div>
+
 
       <div className="action-buttons">
         <button className="save-btn">Save</button>
